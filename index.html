@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" rel="stylesheet" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="currency">
+                <div id="level">Рівень: <span class="value">1</span></div>
+                <div id="money"><span>Валюта: </span><span class="value">0</span><span> грн</span></div>
+                <div id="harvest"><span>Врожай: </span><span class="value">0</span><span> кг</span></div>
+            </div>
+            <div class="experience">
+                <div class="line" style="width: 50%;"></div>
+                <div class="value">0-100</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <ul id="garden">
+                    <!-- js-content -->
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div id="seeds" class="seeds">
+                    <!-- js-content -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div id="items" class="items">
+                    <!-- js-content -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="utilities">
+                    <button type="button" class="" data-action="buy-garden">Купити грядку</button>
+                    <button type="button" class="" data-action="shop">Магазин</button>
+                    <button type="button" class="" data-action="sell-harvest">Продати врожай</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

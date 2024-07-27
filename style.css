@@ -1,0 +1,87 @@
+@import "./src/css/reset.css";
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+ul li {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #000;
+    list-style: none;
+    line-height: 1;
+    cursor: pointer;
+}
+button:disabled {
+    cursor: not-allowed;
+}
+.active {
+    background: yellow;
+}
+.container {
+    width: 100%;
+    padding: 0 16px;
+}
+header {
+}
+section {
+    padding: 15px 0;
+}
+.currency {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    background: #ccc;
+}
+.experience {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+.experience .value {
+    position: relative;
+    z-index: 1;
+    padding: 3px 5px;
+    font-size: 12px;
+    text-align: center;
+}
+.experience .line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    background: rgb(69, 250, 69);
+}
+#garden {
+    border-radius: 4px;
+}
+#garden li[data-status="0"] {
+    background: green;
+}
+#garden li[data-status="1"] {
+    background: rgb(189, 86, 2);
+}
+#garden li[data-status="2"] {
+    background: rgb(80, 36, 0);
+}
+#garden li[data-status="3"] {
+    background-color: green;
+}
+#garden li[data-plant="carrot"] {
+    background-image: url("./src/img/shadow/5.png");
+    background-position: center;
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+}

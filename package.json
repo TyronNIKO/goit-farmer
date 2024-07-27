@@ -1,0 +1,12 @@
+{
+  "name": "goit-farmer",
+  "version": "1.0.0",
+  "description": "My first JS game",
+  "main": "script.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^9.7.0"
+  }
+}
