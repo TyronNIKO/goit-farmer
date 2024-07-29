@@ -2,6 +2,8 @@ import LS from "./src/js/localStorage.js";
 import interFace, {buttons} from "./src/js/interFace.js";
 import Garden from "./src/js/Garden.js";
 
+vesr - 2;
+
 function convertMs(ms) {
     const second = 1000;
     const minute = second * 60;
