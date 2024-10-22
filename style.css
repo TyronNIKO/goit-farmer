@@ -1,5 +1,6 @@
 @import "./src/css/reset.css";
 @import './src/css/main.css';
+@import './src/css/chat.css';
 
 ul {
     display: flex;

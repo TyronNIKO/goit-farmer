@@ -1,28 +1,11 @@
 import LS from "./src/js/localStorage.js";
 import interFace, {buttons} from "./src/js/interFace.js";
 import Garden from "./src/js/Garden.js";
+import chatInit from "./src/js/chat.js";
+import setTimer from "./src/js/Time.js";
 
-function convertMs(ms) {
-    const second = 1000;
-    const minute = second * 60;
-    const hour = minute * 60;
-    const day = hour * 24;
-    const days = Math.floor(ms / day);
-    const hours = Math.floor((ms % day) / hour);
-    const minutes = Math.floor(((ms % day) % hour) / minute);
-    const seconds = Math.floor((((ms % day) % hour) % minute) / second);
-    return {days, hours, minutes, seconds};
-}
-let date = new Date();
-console.log(date);
-
-setInterval(() => {
-    let date = new Date();
-    let dateOff = date.getTime() - date.getTimezoneOffset() * 60 * 1000;
-
-    let currentDate = convertMs(dateOff);
-    interFace.time.textContent = `${currentDate.hours}:${currentDate.minutes}:${currentDate.seconds}`;
-}, 1000);
+setTimer();
+chatInit();
 
 let seedsArr, itemsArr;
 const activeItem = {
